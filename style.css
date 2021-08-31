@@ -1,0 +1,657 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    line-height: 1.5;
+    background-color: rgb(250, 250, 250);
+}
+
+body {
+    position: relative;
+    margin: 0px;
+    font-family:  "Helvetica Neue", sans-serif;
+}
+
+.container {
+
+    display: flex;
+width: 100%;
+    min-height: 50px;
+    background: #5d3ebc;
+    margin-left: auto;
+    margin-right: auto;
+z-index: 10000;
+
+
+}
+.container.active {
+    position: fixed;
+    display: flex;
+    width: 100%;
+        min-height: 50px;
+        background: #5d3ebc;
+        margin-left: auto;
+        margin-right: auto;
+    z-index: 10000;
+}
+
+
+.navbar {
+    display: flex;
+
+    
+
+    width: 100%; 
+     max-width: 600px; 
+
+  
+     margin: 0 auto;
+     margin-top: 12px;
+}   
+
+.button   {
+    position: relative;
+    outline: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgb(93, 62, 188);
+    text-decoration: none;
+    padding: 17px 15px;
+ 
+
+    border-radius: 6px 6px 0px 0px;
+    
+}
+
+.button2   {
+    position: relative;
+    outline: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+
+    text-decoration: none;
+
+}
+
+.button2    {
+    position: relative;
+    outline: 0px;
+    font-size: 14px;
+    letter-spacing: 0.16px;
+}
+.button:hover {
+    background-color: rgb(107, 72, 212);
+}
+
+.navbar ul li  { 
+ 
+    display: inline-block;
+
+
+
+}
+
+.navbar ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.navbar-2{
+    
+
+  
+    display: flex;
+max-width: 1400px;
+
+    justify-content:center;
+    margin: 0 auto; 
+ 
+}
+.navbar-2 ul {
+display: flex;
+align-items: center;
+text-align: center;
+}
+.navbar-2 ul li  { 
+ 
+    display: inline-block;
+
+
+
+}
+
+.navbar-2 ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 0px solid black;
+    width: 100%;
+    min-height: 500px;
+    background-color: #d2d2d2;
+
+}
+.slider-container:before {
+    content: '';
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(   90deg  ,    #5d3ebc 0%,rgba(93,62,188,0) 100% );
+            opacity: 1;
+            z-index: 1;
+}
+.welcomecard {
+    display: flex;
+
+    position: relative;
+    width: 50%;
+    height: 301px; 
+    z-index: 2;
+}
+.controls h1 {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -1.5px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0 0 0 / 10%) 0px 1px 1px;
+    width: 350px;
+    margin-bottom: 4px;
+    margin-top: 41px;
+}
+.authform {
+    position: relative;
+    display: flex;
+border: 0px solid black;
+align-items: center;
+justify-content: center;
+background: white;
+    position: relative;
+    width: 400px;
+   height: 299px;
+   border-radius: 10px 10px 10px 10px;
+   z-index: 2;
+   padding: 24px 24px 24px 24px;
+}
+.form {
+   
+}
+.formcontrols {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 352px;
+    height: 214px;
+}
+.formcontrols h3 {
+    position:relative;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    width: 352px;
+    height: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #5d3ebc;
+}
+.phone-container {
+    position: absolute;
+    display :flex;
+
+    align-items: center;
+    justify-content: space-between;
+    left: 0;
+    top: 15%;
+    bottom: 0;
+    right:0 ;
+    width: 352px;
+    height: 64px;
+
+}
+.inputcontainer input{
+    width: 109px;
+    height: 56px;
+     padding-left: 14px; 
+     padding-right: 14px; 
+    border: 2px solid rgb(223, 222, 226);
+    border-radius: 4px;
+    transition: border-color 0.4s ease 0s;
+
+}
+.inputcontainert input  {
+
+
+    border: 2px solid rgb(223, 222, 226);
+    border-radius: 4px;
+    width: 233px;
+    height: 56px;
+    transition: all 0.2s ; 
+}
+.inputcontainert input:hover{
+  border: 2px solid      #5d3ebc;
+
+}
+.buttons{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    bottom: 0;
+    right:0 ;
+    width: 352px;
+    height: 134px;  
+}
+.buttons2 {
+    border: none;
+    background-color: #ffd300;
+    width: 352px;
+    height: 48px;
+    color: #5d3ebc;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.2s ; 
+    cursor: pointer;
+}
+.img2{
+position: relative;
+left: -23%;
+}
+.a-button {
+    display: flex;
+border: 0px solid black;
+    background-color: rgba(60, 90, 153, 0.1);
+    width: 352px;
+    height: 48px;
+    color: rgb(60, 90, 153);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.2s ; 
+    cursor: pointer;
+  justify-content: center;
+  align-items : center;
+  
+    text-decoration: none;
+}
+.buttons2:hover {
+    color: #ffd300;
+    background-color: #5d3ebc;
+}
+.hr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 352px;
+    height: 34px;
+}
+.hr span  {
+    position: static;
+    border: 0px;
+    height: 2px;
+    background-color: #f3f0fe;
+    width: 170px;
+    margin: 16px 0px;
+}
+.cate {
+    position: relative;
+    display: flex;
+ align-content: center;
+    border: 0px solid black;
+    width: 1232px;
+    
+  margin: 0 auto;
+    min-height: 308px;
+    padding: 24px 24px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(88, 63, 181, 0.08) 0px 2px 16px;
+
+margin-top: 32px;
+
+
+}
+.div-controls{
+    position: relative;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cate h6{
+    position: absolute;
+    top:-1%;
+    left:0;
+    bottom: 0;
+    right:0;
+    font-weight: 600;
+    font-size: 14px;
+  
+
+ 
+  
+    color: #191919;
+    font-size: 14px;
+
+    z-index: 2;
+}
+
+.yeni-ürünler{
+    position: relative;
+    display: flex;
+    border: 2px solid rgb(223, 222, 226);
+    width: 108px;
+    margin: 15px;
+   height: 108px;
+   z-index: 1;
+}
+.Kampanyalar{
+
+position: relative;
+margin: 0 auto;
+    border: 0px solid rgb(223, 222, 226);
+    width: 1232px;
+    min-height: 300px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(88, 63, 181, 0.08) 0px 2px 16px;
+    margin-top: 32px;
+}
+
+.resim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 300px;
+
+}
+.favoriler {
+    border: 0px solid black;
+
+    width: 1232px;
+    min-height: 505px;
+
+    margin: 0 auto;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(88, 63, 181, 0.08) 0px 2px 16px;
+    margin-top: 32px;
+}
+.resim2 {
+    width: 400px;
+    height: 200px;
+    padding: 16px;
+}
+.ürünler {
+    display :flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+}
+.ürün {
+    
+    display: flex;
+    border: 2px solid rgb(223, 222, 226);
+    width: 153px;
+    min-height: 170px;
+    padding: 16px;
+    margin-top: 15px;
+    margin: 12px;
+}
+.contact{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+margin: 0 auto;
+    border: 0px solid black;
+    width: 1232px;
+    min-height: 400px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 32px;
+    box-shadow: rgb(88, 63, 181, 0.08) 0px 2px 16px;
+    padding: 20px;
+}
+.map {
+    display :flex;
+    border: 2px solid rgb(223, 222, 226);
+    width: 600px;
+    height: 300px;
+  
+}
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-control{
+    position: relative;
+    display: flex;
+
+    border: 2px solid rgb(223, 222, 226);
+    border-radius: 4px;
+    width: 400px;
+    height: 56px;
+    transition: all 0.2s; 
+   margin-top: 30px;
+   font-family: 'Segoi UI', sans-serif;
+   font-size: 16px;
+}
+.form textarea {
+    border: 2px solid rgb(223, 222, 226);
+    resize:none;
+    margin-top: 30px;
+    width: 400px;
+    height: 150px;
+    font-family: 'Segoi UI', sans-serif;
+    font-size: 16px;
+}
+.form textarea:focus{
+outline-color: #5d3ebc;
+}
+.text-4{
+    position: absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    display: flex;
+   margin-top: 20px;
+   margin-left: 20px;
+   font-size: 24px;
+   font-weight: 400;
+   widtH: 300px;
+   height:0;
+   color: #5d3ebc;
+   font-family: 'Segoi UI' , sans-serif;
+}
+.btn-submit{
+    border: 2px solid #5d3ebc;
+    width: 300px;
+    margin: 0 auto; 
+    background-color: #5d3ebc;
+    border-radius: 6px 6px 6px 6px;
+    color: #ffd300;
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 20px;
+    min-height: 50px;
+    transition: all 0.2s;
+   cursor: pointer;
+}
+.btn-submit:hover {
+    border: 2px solid #ffd300;
+    color:#5d3ebc;
+    background-color: #ffd300;
+}
+.form-control:focus{
+    outline-color: #5d3ebc;
+}
+@media screen and (max-width: 1329px) {
+
+    .div-controls {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1249px) {
+    .contact, .cate, .favoriler, .resim, .Kampanyalar{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 955px) {
+    .navbar-2{
+        margin-right: 14px;
+    }
+    .navbar {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:1057px) {
+    .contact{
+        justify-content: center;
+    }
+    .form-control {
+        width: 100%;
+    }
+    .btn-submit{
+        width: 100%;
+    }
+    .map {
+        width: 100%;
+    }
+.form{
+    width: 100%;
+}
+.form textarea {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 768px) {
+    .authform{
+width: 100%;
+
+    }
+    .formcontrols{
+        position: relative;
+      display: flex;
+  
+        width: 100%;
+        min-height: 299px;
+    }
+    .formcontrols h3 {
+  
+        width: 100%;
+      margin-top: 12px;    
+      margin-bottom: 0;
+    }
+    .hr{
+        width: 100%;
+    }
+    .welcomecard{
+     display :none;
+    }
+    .slider-container{
+        display: flex;
+min-height: 400px;
+    }
+    .phone-container{
+      width: 100%;
+      justify-content: center;
+    }
+    .buttons{
+        width: 100%;
+    }
+    .a-button{
+        width: 100%;
+    }
+    .buttons2 {
+       width: 100%;
+    }
+    .inputcontainer  input{
+        width: 100%;
+        
+    }
+    .inputcontainert input{
+        display: flex;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    border: 2px solid rgb(223, 222, 226);
+    border-radius: 4px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.2s ease 0s;
+    height: 56px;
+        
+    }
+    .slider-container::before{
+ content: '';
+        position: absolute;
+     
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: linear-gradient( 
+ 355deg
+     , #5d3ebc 0%,rgba(93,62,188,0) 100% );
+        opacity: 1;
+        z-index: 1;
+    }
+    .navbar{
+        margin: 0;
+        margin-top: 12px;
+    }
+    .navbar-2{
+        display: none;
+    }
+}
+@media screen and (max-width: 417px) {
+
+}
+@media screen and (max-width: 414px) {
+    .resim2{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 397px) {
+    .img2{
+        position: relative;
+        lefT: 0;
+        margin-right: 10px;;
+    }
+    .authform{
+        top:0;
+        left:0;
+        right:0;
+        bottom: 0;
+    }
+    .container {
+        width: 100%;
+
+    }
+    .button{
+     padding: 10px 10px;
+    }
+    .slider-container{
+        
+    }
+}
